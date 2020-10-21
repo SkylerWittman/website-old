@@ -10,7 +10,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon ./index.js",
         "ui": "browser-sync start --config bs-config.js",
-        "prod": "node ./index.js"
+        "prod": "pm2 start ./index.js"
     },
     "repository": {
         "type": "git",
@@ -29,6 +29,7 @@
     },
     "dependencies": {
         "express": "^4.17.1",
+        "pm2": "^4.5.0",
         "pug": "^3.0.0"
     }
 }
