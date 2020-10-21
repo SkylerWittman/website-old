@@ -1,0 +1,24 @@
+extends layout
+
+block layout-content
+  div.View.Background
+    h1.Banner Contact Info
+    div.View
+      div.Message.Contact.FadeIn
+        div.Title
+        a(href='https://www.linkedin.com/in/skylerwittman')
+          img.ImageContact(src='images/LinkedInImage.png')
+          h3.h3Contact LinkedIn
+      div.Message.Contact.FadeIn
+        div.Title
+        a(href='https://github.com/SkylerWittman')
+          img.ImageContact(src='images/GitHubImage.png')
+          h3.h3Contact GitHub
+      div.Message.Contact.FadeIn
+        div.Title
+        a(href='mailto:skyler.wittman@gmail.com')
+          img.ImageContact(src='images/Email.png')
+          h3.h3Contact Email
+    div.NavButtons
+        a(href="/")
+          div.NavButton Main Page
