@@ -9,7 +9,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon ./index.js",
-        "ui": "browser-sync start --config bs-config.js"
+        "ui": "browser-sync start --config bs-config.js",
+        "prod": "node ./index.js"
     },
     "repository": {
         "type": "git",
