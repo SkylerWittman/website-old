@@ -2,6 +2,7 @@
 
 ### macOS ###
 *.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -33,5 +34,9 @@ Temporary Items
 # npm stuff
 node_modules/
 package-lock.json
+npm-debug.log
+
+# random
+/*.env
 
 # End of https://www.gitignore.io/api/web,macos
