@@ -41,4 +41,10 @@ Temporary Items
 *.rss
 *.xhtml
 
+# vscode
+.vscode/*
+
+# npm stuff
+node_modules/*
+
 # End of https://www.gitignore.io/api/web,macos
