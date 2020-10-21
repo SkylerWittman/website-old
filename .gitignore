@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/web,macos
+# Created by https://www.gitignore.io/api/macos
 
 ### macOS ###
 *.DS_Store
@@ -27,19 +26,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.xhtml
 
 # vscode
 .vscode/*
