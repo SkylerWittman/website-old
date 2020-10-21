@@ -10,7 +10,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon ./index.js",
         "ui": "browser-sync start --config bs-config.js",
-        "prod": "pm2 start ./index.js"
+        "prod": "pm2 start ./index.js",
+        "production": "pm2 start ./index.js"
     },
     "repository": {
         "type": "git",
