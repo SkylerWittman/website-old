@@ -81,6 +81,11 @@ a {
     background-size: cover;
 }
 
+.BackgroundDaylight {
+    background: url("images/daylight_background.jpg") left bottom;
+    background-size: cover;
+}
+
 .Banner {
     display: flex;
     flex-direction: column;
@@ -98,6 +103,10 @@ a {
     box-shadow: var(--ui-shadow);
 }
 
+.DaylightBanner {
+    background: #f8efef;
+}
+
 .Message {
     padding: 25px;
     border-bottom: var(--ui-shadow-border);
@@ -107,6 +116,10 @@ a {
 
 .Message>.Title {
     padding-bottom: 10px;
+}
+
+.Message>.DaylightTitle {
+    padding-bottom: 2px;
 }
 
 .Message>.Details {
@@ -173,6 +186,16 @@ a {
 .MainPage {
     width: 50vw;
     height: 14vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Daylight {
+    font-size: x-large;
+    width: 50vw;
+    height: 20vw;
     margin: auto;
     display: flex;
     justify-content: center;
