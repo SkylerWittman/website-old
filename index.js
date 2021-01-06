@@ -4,7 +4,7 @@
 const express = require("express");
 const axios = require('axios')
 const path = require("path");
-const moment = require('moment')
+var moment = require('moment-timezone');
 
 /**
  * App Variables
@@ -73,7 +73,7 @@ async function getWeatherInfo(url) {
 }
 
 function getFormattedLocalizedDate(utcDate) {
-    return moment(utcDate).format("h:mm:ss a")
+    return moment(utcDate).tz("America/Toronto").format("h:mm:ss a")
 }
 
 function getSunriseSunsetOutput(todayResponse) {

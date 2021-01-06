@@ -9,7 +9,7 @@ var axios = require('axios');
 
 var path = require("path");
 
-var moment = require('moment');
+var moment = require('moment-timezone');
 /**
  * App Variables
  */
@@ -113,7 +113,7 @@ function getWeatherInfo(url) {
 }
 
 function getFormattedLocalizedDate(utcDate) {
-  return moment(utcDate).format("h:mm:ss a");
+  return moment(utcDate).tz("America/Toronto").format("h:mm:ss a");
 }
 
 function getSunriseSunsetOutput(todayResponse) {
