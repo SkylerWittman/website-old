@@ -28,9 +28,9 @@ body {
 h1 {
     font-family: "Raleway", sans-serif;
     padding: 0;
-    margin: 0;
+    margin: auto;
     color: #2a3747;
-    font-size: 40px;
+    font-size: 3vw;
     text-transform: uppercase;
 }
 
@@ -40,7 +40,7 @@ h2 {
     margin: 0;
     color: #2a3747;
     align-items: right;
-    font-size: 26px;
+    font-size: 1.9vw;
 }
 
 h3 {
@@ -48,7 +48,7 @@ h3 {
     padding: 0;
     margin: 0;
     color: #2a3747;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 a {
@@ -91,9 +91,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 7vw;
-    font-size: 58px;
+    width: 60vw;
+    height: 14vh;
+    font-size: 4vw;
     border-radius: 5px;
     overflow: hidden;
     background: #dddddd;
@@ -144,7 +144,7 @@ a {
     width: 200px;
     background: #fa4141;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -185,7 +185,7 @@ a {
 
 .MainPage {
     width: 50vw;
-    height: 14vw;
+    height: 26vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -193,13 +193,17 @@ a {
 }
 
 .Daylight {
-    font-size: x-large;
+    font-size: 1.8vw;
     width: 50vw;
-    height: 20vw;
+    height: 20vh;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Beautiful {
+    height: 30vh
 }
 
 
