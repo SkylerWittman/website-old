@@ -7,7 +7,6 @@
     "description": "Personal website for Skyler Wittman",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon ./index.js",
         "ui": "browser-sync start --config bs-config.js",
         "prod": "pm2 start ./index.js",
@@ -18,8 +17,8 @@
         "url": "git+https://github.com/SkylerWittman/website.git"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Skyler Wittman",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/SkylerWittman/website/issues"
     },
@@ -29,10 +28,12 @@
         "nodemon": "^2.0.6"
     },
     "dependencies": {
+        "autoprefixer": "^10.2.1",
         "express": "^4.17.1",
         "moment": "^2.29.1",
         "moment-timezone": "^0.5.32",
         "pm2": "^4.5.0",
-        "pug": "^3.0.0"
+        "pug": "^3.0.0",
+        "tailwindcss": "^2.0.2"
     }
 }
