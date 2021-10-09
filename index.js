@@ -43,7 +43,7 @@ app.get("/contact", (req, res) => {
 app.get("/daylight", async(req, res) => {
     var latitude = 45.508888
     var longitude = -73.561668
-    var yesterday = new Date((new Date()).valueOf() - 1000 * 60 * 60 * 24).toISOString()
+    var yesterday = new Date((new Date()).valueOf() - 1000 * 60 * 60 * 24).toDateString()
     var baseUrl = 'https://api.sunrise-sunset.org/json?lat=' + latitude + '&lng=' + longitude + '&formatted=0'
 
     const todayUrl = baseUrl
