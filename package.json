@@ -10,7 +10,8 @@
         "dev": "nodemon ./index.js",
         "ui": "browser-sync start --config bs-config.js",
         "prod": "pm2 start ./index.js",
-        "production": "pm2 start ./index.js"
+        "production": "pm2 start ./index.js",
+        "build:css": "tailwindcss build -i ./src/input.css -o ./dist/style.css --watch"
     },
     "repository": {
         "type": "git",
