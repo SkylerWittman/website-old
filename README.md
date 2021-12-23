@@ -2,14 +2,16 @@ Personal website for Skyler Wittman
 
 
 ### To develop locally
-Requirements
-- node, recommended to install node via [nvm](https://github.com/nvm-sh/nvm)
-- Install node 12.18 or higher
-- Install npm globally: `npm install -g npm`
-- Install dependencies: `npm install`
+Install
+- [nvm](https://github.com/nvm-sh/nvm) - optional but very helpful
+- node - 17.13.x or above recommended: `nvm install 17.13`
+- npm globally: `npm install -g npm`
+- node dependencies: `npm install`
 
 
 ### To use hot-reload
 ```node
 npm run dev
 ```
+
+To modify parameters for browser-sync, update [bs-config.js](bs-config.js)
