@@ -16,9 +16,8 @@ const port = process.env.PORT || "8000";
  *  App Configuration
  */
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
-app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, 'public')))
 
 /**
  * Server Activation
@@ -32,13 +31,14 @@ app.listen(port, () => {
  * Routes Definitions
  */
 app.get("/", (req, res) => {
-    res.render("main", { title: "Main Page" });
+    // res.render("main", { title: "Main Page" });
+    res.sendFile(__dirname + "/public/pages/index.html");
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact", { title: "Contact" });
+    // res.render("contact", { title: "Contact" });
+    res.sendFile(__dirname + "/public/pages/contact.html");
 });
-
 
 app.get("/daylight", async(req, res) => {
     var latitude = 45.508888
@@ -54,12 +54,11 @@ app.get("/daylight", async(req, res) => {
 
     var sunriseSunsetOutput = getSunriseSunsetOutput(todayResponse)
     var totalDaylightOutput = getTotalDaylightOutput(todayResponse)
-
     var daylightOutput = getDaylightOutput(todayResponse, yesterdayResponse)
 
     var finalOutput = sunriseSunsetOutput + ' ' + totalDaylightOutput + ' ' + daylightOutput + ' Love you 💛'
 
-    res.render("daylight", { title: "Hi Jess :)", output: finalOutput });
+    res.render(__dirname + "/public/views/daylight.ejs", { output: finalOutput })
 });
 
 async function getWeatherInfo(url) {

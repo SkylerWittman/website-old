@@ -1,15 +1,10 @@
 module.exports = {
-    content: ["./dist/**/*.{html,js}"],
+    content: ["./public/**/*.{html,js,ejs}"],
     theme: {
         container: {
             center: true,
             padding: '2rem'
-        },
-        extend: {
-            gap: {
-                max: '42rem'
-            }
-        },
+        }
     },
     plugins: [],
 }
