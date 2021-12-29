@@ -23,7 +23,7 @@
 }
 
 .btn-common {
-  @apply text-text-grey font-medium text-lg rounded-full py-4 px-8 border-2 border-transparent w-48
+  @apply text-text-grey font-medium text-lg rounded-full py-4 px-8 border-2 border-transparent w-52
 }
 
 .btn-common:hover {
