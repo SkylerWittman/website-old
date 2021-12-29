@@ -56,9 +56,9 @@ app.get("/daylight", async(req, res) => {
     var totalDaylightOutput = getTotalDaylightOutput(todayResponse)
     var daylightOutput = getDaylightOutput(todayResponse, yesterdayResponse)
 
-    var finalOutput = sunriseSunsetOutput + ' ' + totalDaylightOutput + ' ' + daylightOutput + ' Love you 💛'
+    var daylightOutput = totalDaylightOutput + ' ' + daylightOutput
 
-    res.render(__dirname + "/public/views/daylight.ejs", { output: finalOutput })
+    res.render(__dirname + "/public/views/daylight.ejs", { sunrise_sunset_output: sunriseSunsetOutput, total_daylight_output: daylightOutput })
 });
 
 async function getWeatherInfo(url) {
@@ -82,7 +82,7 @@ function getSunriseSunsetOutput(todayResponse) {
 function getTotalDaylightOutput(todayResponse) {
     var todayDaylight = todayResponse.day_length
     var totalDaylightMoment = moment.duration(todayDaylight, 'seconds')
-    return 'We enjoyed ' + totalDaylightMoment.hours() + ' hours, ' + totalDaylightMoment.minutes() + ' minutes and ' + totalDaylightMoment.seconds() + ' seconds of total daylight.'
+    return '\nWe enjoyed ' + totalDaylightMoment.hours() + ' hours, ' + totalDaylightMoment.minutes() + ' minutes and ' + totalDaylightMoment.seconds() + ' seconds of total daylight.'
 }
 
 function getDaylightOutput(todayResponse, yesterdayResponse) {
@@ -94,16 +94,16 @@ function getDaylightOutput(todayResponse, yesterdayResponse) {
         if (moreDaylight.minutes() > 0) {
             additionalDaylightOutput += maybePlural(moreDaylight.minutes(), 'minute') + ' and '
         }
-        additionalDaylightOutput += moreDaylight.seconds() + ' seconds more than yesterday!'
+        additionalDaylightOutput += moreDaylight.seconds() + ' seconds more'
     } else {
         var lessDaylight = moment.duration(-daylightDifference, 'seconds')
         if (lessDaylight.minutes() > 0) {
             additionalDaylightOutput += maybePlural(lessDaylight.minutes(), 'minute') + ' and '
         }
-        additionalDaylightOutput += lessDaylight.seconds() + ' seconds less than yesterday!'
+        additionalDaylightOutput += lessDaylight.seconds() + ' seconds less'
     }
 
-    return additionalDaylightOutput
+    return 'That\'s <strong>' + additionalDaylightOutput + '</strong> than yesterday!'
 }
 
 function maybePlural(value, word) {
