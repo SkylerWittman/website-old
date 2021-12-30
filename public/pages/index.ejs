@@ -2,13 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <link rel="stylesheet" type="text/css" href="../css/output.css" />
-
-    <title>Skyler Wittman</title>
+    <%- include('../views/header.ejs'); %>
+        <title>Skyler Wittman</title>
 </head>
 
 <body class="bg-gradient-to-r from-cyan-900 to-emerald-800">
@@ -29,13 +24,19 @@
                     &emsp; > Data analytics, API development, feature design, pragmatism
                 </span>
                 <span class="terminal-span">
-                    Currently @ <a class="font-medium text-lightspeed-red" href="https://www.lightspeedhq.com/pos/retail/analytics">Lightspeed</a> building Lightspeed Analytics using python, SQL, some React & TypeScript
-                <br> &emsp; > CTO of <a class="text-geoclique-green" href="https://www.geoclique.com/welcome">GeoClique</a> revolutionizing the real estate investment industry
+                    Currently @ <a class="font-medium text-lightspeed-red"
+                        href="https://www.lightspeedhq.com/pos/retail/analytics">Lightspeed</a>
+                    building Lightspeed Analytics using python, SQL, some React & TypeScript
+                    <br> &emsp; > CTO of <a class="text-geoclique-green"
+                        href="https://www.geoclique.com/welcome">GeoClique</a>
+                    revolutionizing the real estate investment industry
                 </span>
 
                 <span class="terminal-span">
-                    Previously: <br> 
-                    &emsp; > built Lightspeed Payments, Omnichannnel point of sale software @ <span class="font-medium text-lightspeed-red">Lightspeed</span> <br> &emsp; > AIoT backend development @ <span class="text-mnubo-blue font-medium">Mnubo</span>
+                    Previously: <br>
+                    &emsp; > built Lightspeed Payments, Omnichannnel point of sale software @ <span
+                        class="font-medium text-lightspeed-red">Lightspeed</span> <br>
+                    &emsp; > AIoT backend development @ <span class="text-mnubo-blue font-medium">Mnubo</span>
                 </span>
             </div>
         </div>
@@ -45,7 +46,7 @@
         </div>
     </div>
 
-    <footer class="footer-common">Built with &#128150; by me using Express.js + tailwindcss</footer>
+    <%- include('../views/footer.ejs'); %>
 
 </body>
 

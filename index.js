@@ -31,13 +31,11 @@ app.listen(port, () => {
  * Routes Definitions
  */
 app.get("/", (req, res) => {
-    // res.render("main", { title: "Main Page" });
-    res.sendFile(__dirname + "/public/pages/index.html");
+    res.render(__dirname + "/public/pages/index.ejs");
 });
 
 app.get("/contact", (req, res) => {
-    // res.render("contact", { title: "Contact" });
-    res.sendFile(__dirname + "/public/pages/contact.html");
+    res.render(__dirname + "/public/pages/contact.ejs");
 });
 
 app.get("/daylight", async(req, res) => {

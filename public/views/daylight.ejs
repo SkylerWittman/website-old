@@ -2,13 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <link rel="stylesheet" type="text/css" href="../css/output.css" />
-
-    <title>Hi Jess :)</title>
+    <%- include('header.ejs'); %>
+        <title>Hi Jess :)</title>
 </head>
 
 <body class="bg-gradient-to-tr from-indigo-500 via-orange-400 to-yellow-400">
@@ -23,8 +18,8 @@
                 <span class="daylight-span text-2xl font-medium">How much daylight was there today?</span>
                 <span id="daylight_span" class="daylight-span text-2xl font-medium">
                     <%- sunrise_sunset_output %> <br><br>
-                    <%- total_daylight_output %> <br>
-                    Love you 💛
+                        <%- total_daylight_output %> <br>
+                            Love you 💛
                 </span>
             </div>
         </div>
@@ -35,7 +30,7 @@
         </div>
     </div>
 
-    <footer class="footer-common">Built with &#128150; by me using Express.js + tailwindcss</footer>
+    <%- include('footer.ejs'); %>
 
 </body>
 
