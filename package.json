@@ -8,9 +8,9 @@
     "main": "index.js",
     "scripts": {
         "build:css": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css",
-        "build:css:local": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css --watch",
+        "build:css:watch": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css --watch",
         "dev": "nodemon ./index.js",
-        "ui": "browser-sync start --config bs-config.js",
+        "ui": "npm run build:css && npm run dev && browser-sync start --config bs-config.js",
         "prod": "pm2 start ./index.js",
         "production": "pm2 start ./index.js",
         "start": "npm run build:css && npm run dev"
