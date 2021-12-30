@@ -623,6 +623,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(213 55 44 / var(--tw-text-opacity));
 }
 
+.text-geoclique-green {
+  --tw-text-opacity: 1;
+  color: rgb(109 189 83 / var(--tw-text-opacity));
+}
+
 .text-mnubo-blue {
   --tw-text-opacity: 1;
   color: rgb(80 158 227 / var(--tw-text-opacity));

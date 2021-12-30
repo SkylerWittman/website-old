@@ -8,6 +8,7 @@ module.exports = {
                 'terminal-green': '#282C34',
                 'text-grey': '#BEBEBE',
                 'lightspeed-red': '#D5372C',
+                'geoclique-green': '#6DBD53',
                 'mnubo-blue': '#509EE3',
                 'footer-grey': '#6B7687',
                 'pink-gradient': '#50081C'
