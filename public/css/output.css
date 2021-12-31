@@ -496,6 +496,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36rem;
 }
 
+.flex-shrink {
+  flex-shrink: 1;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -582,6 +586,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -782,6 +790,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer-common {
+  margin-top: 0.125rem;
   justify-content: flex-end;
   --tw-bg-opacity: 1;
   background-color: rgb(107 118 135 / var(--tw-bg-opacity));
@@ -793,6 +802,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
+  .footer-common {
+    margin-top: 0px;
+  }
+
   .footer-common {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -831,7 +844,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
 
+@media (min-width: 640px) {
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
   .md\:gap-4 {
     gap: 1rem;
   }
