@@ -2,30 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-.daylight-span {
-  @apply bg-slate-200 rounded-xl top-2 mt-2 py-6 px-12
-}
 
 .title-common {
-  @apply py-4 rounded-2xl mt-2 text-center text-6xl font-sans font-medium text-text-grey 
+  @apply py-4 rounded-2xl mt-2 text-center font-sans font-medium text-text-grey text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl
 }
 
 .terminal-span {
-  @apply text-lg top-4 mt-2 py-2 px-12 bg-terminal-green rounded-md text-pink-200
+  @apply top-4 mt-2 py-2 px-12 text-sm sm:text-lg lg:text-xl bg-terminal-green rounded-md text-pink-200
 }
 
 .footer-common {
-  @apply bg-footer-grey justify-end text-right px-2 py-1
+  @apply bg-footer-grey justify-end text-right px-2
 }
 
 .img {
-  @apply h-40 w-40 mx-18
+  @apply h-24 w-24 lg:h-32 lg:w-32 xl:h-40 xl:w-40
 }
 
 .btn-common {
-  @apply text-text-grey font-medium text-lg rounded-full py-4 px-8 border-2 border-transparent w-52
+  @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 text-text-grey font-medium rounded-full border-2 border-transparent text-base
 }
 
 .btn-common:hover {
-  @apply bg-pink-400 border-lime-500 border-2 text-zinc-900
+  @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 bg-pink-400 border-lime-500 border-2 text-zinc-900
+}
+
+.container-height {
+  height: calc(100vh - 24px);
+}
+
+.medium-container-height {
+  height: calc(100vh - 168px);
+}
+
+.daylight-span {
+  @apply py-2 px-6 md:py-4 md:px-12 text-lg md:text-2xl bg-slate-200 rounded-xl font-medium
 }

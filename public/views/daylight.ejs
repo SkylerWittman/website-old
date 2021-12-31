@@ -9,14 +9,17 @@
 <body class="bg-gradient-to-tr from-indigo-500 via-orange-400 to-yellow-400">
 
     <!-- height container -->
-    <div class="flex flex-col pb-4" style="height:calc(100vh - 32px)">
+    <div class="flex flex-col pb-3 container-height md:medium-container-height">
         <!-- horizontal container -->
         <div class="container flex justify-center h-screen max-w-xl">
             <!-- vertical container -->
             <div class="flex flex-col gap-4">
-                <span class="mt-2 py-4 px-12 text-4xl font-bold text-gray-800 mx-20">Oh hi Jess! &#128037;</span>
-                <span class="daylight-span text-2xl font-medium">How much daylight was there today?</span>
-                <span id="daylight_span" class="daylight-span text-2xl font-medium">
+                <span class="mt-2 py-2 px-8 text-3xl md:text-4xl text-center font-bold text-gray-800">Oh
+                    hi Jess!
+                    &#128037;</span>
+                <span class="daylight-span">How much daylight was there
+                    today?</span>
+                <span id="daylight_span" class="daylight-span">
                     <%- sunrise_sunset_output %> <br><br>
                         <%- total_daylight_output %> <br>
                             Love you 💛

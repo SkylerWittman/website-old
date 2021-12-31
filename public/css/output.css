@@ -466,26 +466,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.absolute {
-  position: absolute;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.top-4 {
-  top: 1rem;
+.mx-18 {
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
 }
 
 .mx-adjust {
   margin-left: 25%;
   margin-right: 25%;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .mt-2 {
@@ -498,14 +486,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-screen {
   height: 100vh;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-6\/12 {
@@ -526,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .rounded-full {
@@ -586,28 +570,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #facc15;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-center {
+  text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -638,18 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.daylight-span {
-  top: 0.5rem;
-  margin-top: 0.5rem;
-  border-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .title-common {
   margin-top: 0.5rem;
   border-radius: 1rem;
@@ -657,11 +628,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
   text-align: center;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(190 190 190 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .title-common {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-common {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-common {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title-common {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 .terminal-span {
@@ -674,10 +673,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(251 207 232 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .terminal-span {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terminal-span {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .footer-common {
@@ -686,40 +699,154 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(107 118 135 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   text-align: right;
 }
 
 .img {
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
-  height: 10rem;
-  width: 10rem;
+  height: 6rem;
+  width: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .img {
+    height: 8rem;
+  }
+
+  .img {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .img {
+    height: 10rem;
+  }
+
+  .img {
+    width: 10rem;
+  }
 }
 
 .btn-common {
-  width: 13rem;
+  width: 10rem;
   border-radius: 9999px;
   border-width: 2px;
   border-color: transparent;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(190 190 190 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .btn-common {
+    width: 13rem;
+  }
+
+  .btn-common {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .btn-common {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .btn-common:hover {
+  width: 10rem;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(132 204 22 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .btn-common:hover {
+    width: 13rem;
+  }
+
+  .btn-common:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .btn-common:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.container-height {
+  height: calc(100vh - 24px);
+}
+
+.medium-container-height {
+  height: calc(100vh - 168px);
+}
+
+.daylight-span {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .daylight-span {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .daylight-span {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .daylight-span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:right-6 {
+    right: 1.5rem;
+  }
+
+  .xl\:top-4 {
+    top: 1rem;
+  }
 }
