@@ -11,10 +11,6 @@
   @apply top-4 mt-2 py-2 px-12 text-sm sm:text-lg lg:text-xl bg-terminal-green rounded-md text-pink-200
 }
 
-.footer-common {
-  @apply bg-footer-grey justify-end text-right px-2
-}
-
 .img {
   @apply h-24 w-24 lg:h-32 lg:w-32 xl:h-40 xl:w-40
 }
@@ -27,12 +23,12 @@
   @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 bg-pink-400 border-lime-500 border-2 text-zinc-900
 }
 
-.container-height {
-  height: calc(100vh - 24px);
+.footer-common {
+  @apply bg-footer-grey justify-end text-right px-1 sm:px-2 text-sm
 }
 
-.medium-container-height {
-  height: calc(100vh - 168px);
+.container-height {
+  height: calc(100vh - 20px);
 }
 
 .daylight-span {

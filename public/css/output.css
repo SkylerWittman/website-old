@@ -693,15 +693,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.footer-common {
-  justify-content: flex-end;
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 118 135 / var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-align: right;
-}
-
 .img {
   height: 6rem;
   width: 6rem;
@@ -790,12 +781,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.container-height {
-  height: calc(100vh - 24px);
+.footer-common {
+  justify-content: flex-end;
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 118 135 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: right;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.medium-container-height {
-  height: calc(100vh - 168px);
+@media (min-width: 640px) {
+  .footer-common {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.container-height {
+  height: calc(100vh - 20px);
 }
 
 .daylight-span {
