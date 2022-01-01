@@ -488,6 +488,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-6\/12 {
   width: 50%;
 }
@@ -676,7 +684,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(40 44 52 / var(--tw-bg-opacity));
+  background-color: rgb(51 56 66 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 3rem;
@@ -790,8 +798,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer-common {
-  margin-top: 0.125rem;
-  justify-content: flex-end;
+  margin-top: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(107 118 135 / var(--tw-bg-opacity));
   padding-left: 0.25rem;
@@ -802,10 +809,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .footer-common {
-    margin-top: 0px;
-  }
-
   .footer-common {
     padding-left: 0.5rem;
     padding-right: 0.5rem;

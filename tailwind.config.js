@@ -5,7 +5,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'terminal-green': '#282C34',
+                'terminal-green': '#333842',
                 'text-grey': '#BEBEBE',
                 'lightspeed-red': '#D5372C',
                 'geoclique-green': '#6DBD53',
