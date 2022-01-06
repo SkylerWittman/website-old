@@ -29,6 +29,7 @@
 
 .container-height {
   height: calc(100vh - 20px);
+  min-height: 724px;
 }
 
 .daylight-span {

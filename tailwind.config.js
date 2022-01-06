@@ -16,12 +16,15 @@ module.exports = {
             margin: {
                 'adjust': '25%',
                 '18': '4.5rem'
-            }
+            },
+            // screens: {
+                // 'xs': '200px'
+            // }
         },
         container: {
             center: true,
             padding: '2rem'
-        }
+        },
     },
     plugins: [],
 }
