@@ -24,7 +24,7 @@
 }
 
 .footer-common {
-  @apply bg-footer-grey text-right px-1 sm:px-2 text-sm mt-auto
+  @apply bg-footer-grey text-right px-1 sm:px-2 text-sm mt-auto sticky
 }
 
 .container-height {

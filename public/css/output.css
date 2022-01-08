@@ -794,6 +794,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer-common {
+  position: -webkit-sticky;
+  position: sticky;
   margin-top: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(107 118 135 / var(--tw-bg-opacity));
