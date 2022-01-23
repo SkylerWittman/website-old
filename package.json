@@ -12,7 +12,7 @@
         "dev": "nodemon ./index.js",
         "ui": "npm run build:css && npm run dev && browser-sync start --config bs-config.js",
         "prod": "npm install && npm run build:css && npm run pm2-start",
-        "pm2-start": "pm2 start ./index.js",
+        "pm2-start": "pm2 start index.js",
         "start": "npm run build:css && npm run dev"
     },
     "repository": {
