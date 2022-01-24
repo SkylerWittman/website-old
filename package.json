@@ -2,7 +2,7 @@
     "name": "website",
     "version": "1.0.0",
     "engines": {
-        "node": "14.x"
+        "node": "17.3.x"
     },
     "description": "Personal website for Skyler Wittman",
     "main": "index.js",
@@ -12,7 +12,8 @@
         "dev": "nodemon ./index.js",
         "ui": "npm run build:css && npm run dev && browser-sync start --config bs-config.js",
         "prod": "npm install && npm run build:css && npm run pm2-start",
-        "pm2-start": "pm2 start index.js",
+        "production": "npm run prod",
+        "pm2-start": "pm2 start ./index.js",
         "start": "npm run build:css && npm run dev"
     },
     "repository": {
