@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -30,6 +30,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -44,6 +45,8 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -186,6 +189,8 @@ textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
   /* 1 */
   line-height: inherit;
   /* 1 */
@@ -353,13 +358,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -415,15 +413,62 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
+/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
 }
 
 *, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -506,6 +551,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .mx-18 {
   margin-left: 4.5rem;
   margin-right: 4.5rem;
@@ -585,21 +634,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .from-emerald-800 {
   --tw-gradient-from: #065f46;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(6 95 70 / 0));
+  --tw-gradient-to: rgb(6 95 70 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-cyan-900 {
   --tw-gradient-from: #164e63;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
+  --tw-gradient-to: rgb(22 78 99 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-indigo-500 {
   --tw-gradient-from: #6366f1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
+  --tw-gradient-to: rgb(99 102 241 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .via-orange-400 {
-  --tw-gradient-stops: var(--tw-gradient-from), #fb923c, var(--tw-gradient-to, rgb(251 146 60 / 0));
+  --tw-gradient-to: rgb(251 146 60 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #fb923c, var(--tw-gradient-to);
 }
 
 .to-pink-gradient {
@@ -653,14 +706,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.text-lightspeed-red {
+.text-croogloo-green {
   --tw-text-opacity: 1;
-  color: rgb(213 55 44 / var(--tw-text-opacity));
+  color: rgb(90 187 105 / var(--tw-text-opacity));
 }
 
 .text-geoclique-green {
   --tw-text-opacity: 1;
   color: rgb(109 189 83 / var(--tw-text-opacity));
+}
+
+.text-lightspeed-red {
+  --tw-text-opacity: 1;
+  color: rgb(213 55 44 / var(--tw-text-opacity));
 }
 
 .text-mnubo-blue {
@@ -746,27 +804,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .img {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 @media (min-width: 1024px) {
   .img {
-    height: 8rem;
-  }
-
-  .img {
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
   }
 }
 
 @media (min-width: 1280px) {
   .img {
-    height: 10rem;
-  }
-
-  .img {
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
 }
 
@@ -789,14 +841,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   .btn-common {
     width: 13rem;
-  }
-
-  .btn-common {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .btn-common {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -820,21 +866,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   .btn-common:hover {
     width: 13rem;
-  }
-
-  .btn-common:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .btn-common:hover {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 .footer-common {
-  position: -webkit-sticky;
   position: sticky;
   margin-top: auto;
   --tw-bg-opacity: 1;
@@ -875,14 +914,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   .daylight-span {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .daylight-span {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .daylight-span {
     font-size: 1.5rem;
     line-height: 2rem;
   }

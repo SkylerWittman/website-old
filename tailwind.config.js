@@ -8,6 +8,7 @@ module.exports = {
                 'terminal-green': '#333842',
                 'text-grey': '#BEBEBE',
                 'lightspeed-red': '#D5372C',
+                'croogloo-green': '#5ABB69',
                 'geoclique-green': '#6DBD53',
                 'mnubo-blue': '#509EE3',
                 'footer-grey': '#6B7687',
@@ -17,9 +18,6 @@ module.exports = {
                 'adjust': '25%',
                 '18': '4.5rem'
             },
-            // screens: {
-                // 'xs': '200px'
-            // }
         },
         container: {
             center: true,

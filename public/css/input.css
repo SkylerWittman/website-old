@@ -12,7 +12,7 @@
 }
 
 .img {
-  @apply h-24 w-24 lg:h-32 lg:w-32 xl:h-40 xl:w-40
+  @apply h-16 w-16 lg:h-24 lg:w-24 xl:h-32 xl:w-32
 }
 
 .btn-common {

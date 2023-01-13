@@ -39,4 +39,7 @@ npm-debug.log
 # random
 /*.env
 
+#snyk
+.dccache
+
 # End of https://www.gitignore.io/api/web,macos
