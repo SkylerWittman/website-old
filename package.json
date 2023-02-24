@@ -5,15 +5,17 @@
         "node": "18.13.x"
     },
     "description": "Personal website for Skyler Wittman",
-    "main": "index.js",
+    "main": "dist/index.ts",
+    "type": "module",
     "scripts": {
+        "prebuild": "eslint -c eslintrc.json -p tsconfig.json --fix",
         "build:css": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css",
         "build:css:watch": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css --watch",
-        "dev": "nodemon ./index.js",
+        "dev": "nodemon ./src/index.ts",
         "ui": "yarn run build:css && yarn run dev && browser-sync start --config bs-config.js",
         "prod": "yarn install && yarn run build:css && yarn run pm2-start",
         "production": "yarn run prod",
-        "pm2-start": "pm2 start ./index.js",
+        "pm2-start": "pm2 start ./src/index.ts",
         "start": "yarn run build:css && yarn run dev"
     },
     "repository": {
@@ -28,21 +30,30 @@
     },
     "homepage": "https://github.com/SkylerWittman/website#readme",
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
         "browser-sync": "^2.27.12",
         "debug": "^4.3.4",
+        "eslint-config-standard-with-typescript": "^34.0.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
         "nodemon": "^2.0.20",
         "npm-check-updates": "^16.7.9"
     },
     "dependencies": {
+        "@types/express": "^4.17.17",
         "autoprefixer": "^10.4.13",
         "ejs": "^3.1.8",
+        "eslint": "^8.0.1",
         "express": "^4.18.2",
+        "install": "^0.13.0",
         "moment": "^2.29.4",
         "moment-timezone": "^0.5.40",
         "pm2": "^5.2.2",
         "postcss": "^8.4.21",
         "tailwindcss": "^3.2.7",
-        "typescript": "^4.9.5",
+        "ts-node": "^10.9.1",
+        "typescript": "*",
         "uuid": "^9.0.0"
     }
 }
