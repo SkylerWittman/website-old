@@ -10,11 +10,11 @@
         "build:css": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css",
         "build:css:watch": "tailwindcss build -i ./public/css/input.css -o ./public/css/output.css --watch",
         "dev": "nodemon ./index.js",
-        "ui": "npm run build:css && npm run dev && browser-sync start --config bs-config.js",
-        "prod": "npm install && npm run build:css && npm run pm2-start",
-        "production": "npm run prod",
+        "ui": "yarn run build:css && yarn run dev && browser-sync start --config bs-config.js",
+        "prod": "yarn install && yarn run build:css && yarn run pm2-start",
+        "production": "yarn run prod",
         "pm2-start": "pm2 start ./index.js",
-        "start": "npm run build:css && npm run dev"
+        "start": "yarn run build:css && yarn run dev"
     },
     "repository": {
         "type": "git",
