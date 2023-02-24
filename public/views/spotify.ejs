@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('header.ejs'); %>
+        <title>Spotify Test</title>
+</head>
+
+<body>
+
+    <!-- height container -->
+    <div class="flex flex-col pb-3 container-height">
+        <!-- horizontal container -->
+        <div class="container flex justify-center h-screen max-w-xl">
+            <button class="btn btn-green" onclick="alert('clicked')">
+                Spotify Login
+            </button>
+        </div>
+
+        <div class="flex justify-center gap-4">
+            <a href="/ "><button class="btn-common bg-blue-600 text-gray-800">Main Page</button></a>
+            <a href="/contact "><button class="btn-common bg-blue-600 text-gray-800">Contact me</button></a>
+        </div>
+    </div>
+
+    <%- include('footer.ejs'); %>
+
+</body>
+
+</html>

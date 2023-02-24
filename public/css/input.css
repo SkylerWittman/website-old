@@ -2,36 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .title-common {
-  @apply py-4 rounded-2xl mt-2 text-center font-sans font-medium text-text-grey text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl
+    @apply py-4 rounded-2xl mt-2 text-center font-sans font-medium text-text-grey text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl;
 }
 
 .terminal-span {
-  @apply top-4 mt-2 py-2 px-12 text-sm sm:text-lg lg:text-xl bg-terminal-green rounded-md text-pink-200
+    @apply top-4 mt-2 py-2 px-12 text-sm sm:text-lg lg:text-xl bg-terminal-green rounded-md text-pink-200;
 }
 
 .img {
-  @apply h-16 w-16 lg:h-24 lg:w-24 xl:h-32 xl:w-32
+    @apply h-16 w-16 lg:h-24 lg:w-24 xl:h-32 xl:w-32;
+}
+
+.btn {
+    @apply py-2 px-4 font-medium rounded-full border-2 border-transparent text-base h-12;
+}
+
+.btn-green {
+    @apply bg-green-500 text-white;
+}
+
+.btn-green:hover {
+    @apply bg-green-700;
 }
 
 .btn-common {
-  @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 text-text-grey font-medium rounded-full border-2 border-transparent text-base
+    @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 text-text-grey font-medium rounded-full border-2 border-transparent text-base;
 }
 
 .btn-common:hover {
-  @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 bg-pink-400 border-lime-500 border-2 text-zinc-900
+    @apply w-40 px-1 py-2 md:py-4 md:px-8 md:w-52 bg-pink-400 border-lime-500 border-2 text-zinc-900;
 }
 
 .footer-common {
-  @apply bg-footer-grey text-right px-1 sm:px-2 text-sm mt-auto sticky
+    @apply bg-footer-grey text-right px-1 sm:px-2 text-sm mt-auto sticky;
 }
 
 .container-height {
-  height: calc(100vh - 20px);
-  min-height: 724px;
+    height: calc(100vh - 20px);
+    min-height: 724px;
 }
 
 .daylight-span {
-  @apply py-2 px-6 md:py-4 md:px-12 text-lg md:text-2xl bg-slate-200 rounded-xl font-medium
+    @apply py-2 px-6 md:py-4 md:px-12 text-lg md:text-2xl bg-slate-200 rounded-xl font-medium;
 }
